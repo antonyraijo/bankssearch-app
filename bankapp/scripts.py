@@ -27,7 +27,7 @@ def branch_creation_script_run():
             district = row['district']
             state = row['state']
 
-            if count < 10000:
+            if count < 9000:
                 bank_obj = Banks.objects.get(pk=bank_id)
                 new_branch = Branches.objects.get_or_create(
                     ifsc=ifsc,
